@@ -1,6 +1,6 @@
 # mqtt_v1
 
-The source code for the mqtt feature for pilight can be downloaded here.
+The source code for the mqtt feature for pilight can be downloaded here. The latest **staging** version 8.1.3 is required. 
 
 To get mqtt integrated with pilight, you need to copy or move several files from the download folder to different pilight folders and modify one lua core file:
 
