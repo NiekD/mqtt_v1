@@ -4,15 +4,15 @@ The source code for the mqtt feature for pilight can be downloaded here.
 
 To get mqtt integrated with pilight, you need to copy or move several files from the download folder to different pilight folders and modify one lua core file:
 
-⦁	copy or move mqtt.c and mqtt.h from <download folder>/core/ to pilight/libs/pilight/core/ 
+⦁	copy or move mqtt.c and mqtt.h from mqtt_v1/core/ to pilight/libs/pilight/core/ 
 
-⦁	copy or move mqtt.c and mqtt.h from <download folder>/lua_c/ to pilight/libs/pilight/lua_c/network/ 
+⦁	copy or move mqtt.c and mqtt.h from mqtt_v1/lua_c/ to pilight/libs/pilight/lua_c/network/ 
 
 ⦁	Make a backup copy of pilight/libs/pilight/lua_c/network.h/ so you can restore it if installation would fail.
 
-⦁	copy or move network.h from <download folder>/lua_c/network.h to pilight/libs/pilight/lua_c/
+⦁	copy or move network.h from mqtt_v1/lua_c/network.h to pilight/libs/pilight/lua_c/
 
-⦁	copy or move mqttgetmsg.lua and mqttpublish.lua from <download folder>/actions/ to pilight/libs/pilight/events/actions/
+⦁	copy or move mqttgetmsg.lua and mqttpublish.lua from mqtt_v1/actions/ to pilight/libs/pilight/events/actions/
 
 Now pilight can be recompiled (using setup.sh in the pilight folder) and if that succeeds, the mqtt actions are available to be used in your rules. For instance:
 
